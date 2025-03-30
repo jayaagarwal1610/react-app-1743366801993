@@ -1,0 +1,35 @@
+.app {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.content-container {
+  display: flex;
+  margin-top: 20px;
+}
+
+.main-content {
+  flex: 3;
+  padding: 0 15px;
+}
+
+.sidebar {
+  flex: 1;
+  padding: 0 15px;
+  border-left: 1px solid #eaeaea;
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    border-left: none;
+    border-top: 1px solid #eaeaea;
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,80 @@
+.navigation {
+  width: 100%;
+  background-color: #c00;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.primary-nav {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.primary-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.primary-nav a {
+  padding: 15px 12px;
+  color: white;
+  font-weight: 500;
+  position: relative;
+}
+
+.primary-nav a.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: white;
+}
+
+.city-nav {
+  position: relative;
+}
+
+.city-selector {
+  background: none;
+  border: none;
+  color: white;
+  padding: 15px 12px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-arrow {
+  margin-left: 5px;
+  font-size: 10px;
+}
+
+.city-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  min-width: 150px;
+}
+
+.city-dropdown button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 10px 15px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.city-dropdown button:hover {
+  background-color: #f5f5f5;
+}

@@ -1,0 +1,54 @@
+.city-news {
+  margin: 30px 0;
+}
+
+.city-news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.city-news-card {
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.city-news-card:hover {
+  transform: translateY(-5px);
+}
+
+.city-news-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.city-news-card .news-content {
+  padding: 15px;
+}
+
+.city-news-card h4 {
+  font-size: 18px;
+  color: #222;
+  margin: 0 0 10px;
+}
+
+.city-news-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .city-news-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .city-news-grid {
+    grid-template-columns: 1fr;
+  }
+}
